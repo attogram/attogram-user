@@ -1,4 +1,4 @@
-<?php // Attogram Framework - User Module - attogram_user class v0.1.0
+<?php // Attogram Framework - User Module - attogram_user class v0.1.1
 
 namespace Attogram;
 
@@ -7,7 +7,7 @@ namespace Attogram;
  */
 interface attogram_user_interface {
 
-  public static function login( $PSR_3_logger_object, $database_object );
+  public static function login( $psr3LoggerObject, $databaseObject );
 
   public static function logout();
 
@@ -28,17 +28,17 @@ class attogram_user implements attogram_user_interface
    * @param  obj   $db   The attogram database object
    * @return bool
    */
-  public static function login( $log, $db )
+  public static function login( $log, $database )
   {
     if( !isset($_POST['u']) || !isset($_POST['p']) || !$_POST['u'] || !$_POST['p'] ) {
       $log->error('LOGIN: missing username or password');
       return false;
     }
-    $user = $db->query(
-      'SELECT id, username, level, email FROM user WHERE username = :u AND password = :p',
-      $bind=array(':u'=>$_POST['u'],':p'=>$_POST['p']) );
+    $bind[':u'] = $_POST['u'];
+    $bind[':p'] = $_POST['p'];
+    $user = $database->query('SELECT id, username, level, email FROM user WHERE username = :u AND password = :p', $bind );
 
-    if( $db->db->errorCode() != '00000' ) { // query failed
+    if( $database->db->errorCode() != '00000' ) { // query failed
       $log->error('LOGIN: Login system offline');
       return false;
     }
