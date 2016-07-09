@@ -27,3 +27,6 @@ composer create-project attogram/attogram-user modules/_attogram_user
 
 * Includes:
  * `includes/attogram_user.php` - Attogram User object
+
+ * Misc:
+  * `tests/` - phpunit tests
