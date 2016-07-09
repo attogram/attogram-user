@@ -26,4 +26,4 @@ composer create-project attogram/attogram-user modules/_attogram_user
  * `admin_actions/user-admin.php` - User administration
 
 * Includes:
- * `includes\attogram_user.php` - Attogram User object
+ * `includes/attogram_user.php` - Attogram User object
