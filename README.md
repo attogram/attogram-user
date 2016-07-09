@@ -7,6 +7,7 @@
 [![License](https://poser.pugx.org/attogram/attogram-user/license)](https://github.com/attogram/attogram-user/blob/master/LICENSE.md)
 [![Code Climate](https://codeclimate.com/github/attogram/attogram-user/badges/gpa.svg)](https://codeclimate.com/github/attogram/attogram-user)
 [![Issue Count](https://codeclimate.com/github/attogram/attogram-user/badges/issue_count.svg)](https://codeclimate.com/github/attogram/attogram-user)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8b2c48929d514a60b355a84f136c57c2)](https://www.codacy.com/app/attogram-project/attogram-user?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=attogram/attogram-user&amp;utm_campaign=Badge_Grade)
 [`[CHANGELOG]`](https://github.com/attogram/attogram-user/blob/master/CHANGELOG.md)
 
 This is the User Module for the [Attogram Framework](https://github.com/attogram/attogram).
