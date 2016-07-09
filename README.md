@@ -16,7 +16,7 @@ This is the User Module for the [Attogram Framework](https://github.com/attogram
 composer create-project attogram/attogram-user modules/_attogram_user
 ```
 
-# Database Module contents
+# User Module contents
 
 * Public Actions:
  * `actions/login.php` - Login page
