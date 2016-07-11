@@ -1,4 +1,4 @@
-# Attogram Framework User Module v0.0.1
+# Attogram Framework User Module v0.0.2
 
 [![Build Status](https://travis-ci.org/attogram/attogram-user.svg?branch=master)](https://travis-ci.org/attogram/attogram-user)
 [![Latest Stable Version](https://poser.pugx.org/attogram/attogram-user/v/stable)](https://packagist.org/packages/attogram/attogram-user)
