@@ -1,4 +1,4 @@
-# Attogram Framework User Module v0.0.6
+# Attogram Framework User Module v0.0.3
 
 [![Build Status](https://travis-ci.org/attogram/attogram-user.svg?branch=master)](https://travis-ci.org/attogram/attogram-user)
 [![Latest Stable Version](https://poser.pugx.org/attogram/attogram-user/v/stable)](https://packagist.org/packages/attogram/attogram-user)
@@ -16,7 +16,7 @@ This is the User Module for the [Attogram Framework](https://github.com/attogram
 * You already installed the [Attogram Framework](https://github.com/attogram/attogram), didn't you?
 * Goto the top level of your install, then run:
 ```
-composer create-project attogram/attogram-user modules/_AttogramUser
+composer create-project attogram/attogram-user modules/_attogram_user
 ```
 
 # User Module contents
