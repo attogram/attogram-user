@@ -1,6 +1,6 @@
 <?php // Attogram Framework - User Module - User Page v0.0.8
 
-namespace attogram;
+namespace Attogram;
 
 if( !class_exists('\attogram\attogram_user') ) {
   $this->log->error('modules/user/actions/user.php: attogram_user class not found');
