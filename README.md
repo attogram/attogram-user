@@ -1,4 +1,4 @@
-# Attogram Framework User Module v0.0.5
+# Attogram Framework User Module v0.0.6
 
 [![Build Status](https://travis-ci.org/attogram/attogram-user.svg?branch=master)](https://travis-ci.org/attogram/attogram-user)
 [![Latest Stable Version](https://poser.pugx.org/attogram/attogram-user/v/stable)](https://packagist.org/packages/attogram/attogram-user)
@@ -29,7 +29,7 @@ composer create-project attogram/attogram-user modules/_AttogramUser
  * `admin_actions/user-admin.php` - User administration
 
 * Includes:
- * `includes/attogram_user.php` - Attogram User object
+ * `includes/AttogramUser.php` - Attogram User object
 
  * Misc:
   * `tests/*` - phpunit tests

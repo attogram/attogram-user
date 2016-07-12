@@ -1,4 +1,4 @@
-<?php // Attogram Framework - User Module - AttogramUser class v0.1.5
+<?php // Attogram Framework - User Module - AttogramUser class v0.1.6
 
 namespace Attogram;
 
