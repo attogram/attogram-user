@@ -1,4 +1,4 @@
-<?php // Attogram Framework - User Module - User Page v0.0.7
+<?php // Attogram Framework - User Module - User Page v0.0.8
 
 namespace attogram;
 
@@ -7,7 +7,7 @@ if( !class_exists('\attogram\attogram_user') ) {
   $this->error404('User Page Disbled.  Attogram User module missing in action!');
 }
 
-if( !\attogram_user::is_logged_in() ) {
+if( !\attogram\attogram_user::is_logged_in() ) {
   header('Location: ' . $this->path . '/login/');
   exit;
 }
