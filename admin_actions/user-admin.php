@@ -8,10 +8,10 @@ print '<div class="container"><h1 class="squished">👥 User Admin</h1>';
 
 $this->database->tabler(
   $table = 'user',
-  $table_id = 'id',
-  $name_singular = 'user',
-  $name_plural = 'users',
-  $public_link = false,
+  $tableId = 'id',
+  $nameSingular = 'user',
+  $namePlural = 'users',
+  $publicLink = false,
   $col = array(
     array('class'=>'col-md-1', 'title'=>'<code>ID</code>', 'key'=>'id'),
     array('class'=>'col-md-5', 'title'=>'username', 'key'=>'username'),
@@ -20,9 +20,9 @@ $this->database->tabler(
     array('class'=>'col-md-1', 'title'=>'level', 'key'=>'level'),
   ),
   $sql = 'SELECT * FROM user ORDER BY id',
-  $admin_link = '../users/',
-  $show_edit = true,
-  $per_page = 20
+  $adminLink = '../users/',
+  $showEdit = true,
+  $perPage = 20
 );
 
 print '</div>';

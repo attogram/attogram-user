@@ -7,7 +7,7 @@ if( !class_exists('\attogram\AttogramUser') ) {
   $this->error404('User Page Disbled.  Attogram User module missing in action!');
 }
 
-if( !\attogram\AttogramUser::is_logged_in() ) {
+if( !\attogram\AttogramUser::isLoggedIn() ) {
   header('Location: ' . $this->path . '/login/');
   exit;
 }

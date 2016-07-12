@@ -11,7 +11,7 @@ interface AttogramUserInterface {
 
   public static function logout();
 
-  public static function is_logged_in();
+  public static function isLoggedIn();
 
 }
 
@@ -73,7 +73,7 @@ class AttogramUser implements AttogramUserInterface
    * is a user logged into the system?
    * @return bool
    */
-  public static function is_logged_in( )
+  public static function isLoggedIn( )
   {
     if( isset($_SESSION['attogram_id']) && $_SESSION['attogram_id'] && isset($_SESSION['AttogramUsername']) && $_SESSION['AttogramUsername']) {
       return true;
