@@ -1,4 +1,4 @@
-<?php // Attogram Framework - User Module - attogram_user class v0.1.1
+<?php // Attogram Framework - User Module - attogram_user class v0.1.3
 
 namespace Attogram;
 
@@ -24,8 +24,8 @@ class attogram_user implements attogram_user_interface
 
   /**
    * login a user into the system
-   * @param  obj   $log  PSR-3 compliant logger object
-   * @param  obj   $db   The attogram database object
+   * @param  obj   $log       PSR-3 compliant logger object
+   * @param  obj   $database  The attogram database object
    * @return bool
    */
   public static function login( $log, $database )
