@@ -38,7 +38,7 @@ class attogram_user implements attogram_user_interface
     $bind[':p'] = $_POST['p'];
     $user = $database->query('SELECT id, username, level, email FROM user WHERE username = :u AND password = :p', $bind );
 
-    if( $database->db->errorCode() != '00000' ) { // query failed
+    if( $database->database->errorCode() != '00000' ) { // query failed
       $log->error('LOGIN: Login system offline');
       return false;
     }
