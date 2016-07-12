@@ -1,8 +1,8 @@
-<?php // Attogram Framework - User Module - User Admin v0.2.5
+<?php // Attogram Framework - User Module - User Admin v0.2.6
 
 namespace attogram;
 
-$this->page_header('👥 User Admin');
+$this->pageHeader('👥 User Admin');
 
 print '<div class="container"><h1 class="squished">👥 User Admin</h1>';
 
@@ -26,4 +26,4 @@ $this->database->tabler(
 );
 
 print '</div>';
-$this->page_footer();
+$this->pageFooter();

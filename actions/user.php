@@ -1,4 +1,4 @@
-<?php // Attogram Framework - User Module - User Page v0.0.6
+<?php // Attogram Framework - User Module - User Page v0.0.7
 
 namespace attogram;
 
@@ -12,7 +12,7 @@ if( !\attogram_user::is_logged_in() ) {
   exit;
 }
 
-$this->page_header('👤 User page');
+$this->pageHeader('👤 User page');
 
 print '<div class="container"><h1>👤 User</h1><hr />'
 . 'ID: <code>' . @$_SESSION['attogram_id'] . '</code>'
@@ -22,4 +22,4 @@ print '<div class="container"><h1>👤 User</h1><hr />'
 . '<br />isAdmin?:  ' . ($this->isAdmin ? 'Yes' : 'No')
 . '</div>';
 
-$this->page_footer();
+$this->pageFooter();

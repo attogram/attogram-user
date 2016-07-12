@@ -1,15 +1,15 @@
-<?php // Attogram Framework - User Module - Login Page v0.0.7
+<?php // Attogram Framework - User Module - Login Page v0.0.9
 
 namespace attogram;
 
 if( !class_exists('\attogram\attogram_user') ) {
-  $this->log->error('modules/user/actions/login.php: attogram_user class not found');
+  $this->log->error('login.php: attogram_user class not found');
   $this->error404('Login Disbled.  Attogram User module missing in action!');
 }
 
 $message = '';
 if( isset($_POST['login']) ) { // attempt to login, buffer errors to show later
-  if( \attogram_user::login( $this->log, $this->database ) ) {
+  if( \attogram\attogram_user::login( $this->log, $this->database ) ) {
     $this->event->info ($this->clientIp . ' LOGIN: id: ' . $_SESSION['attogram_id'] . ' username: ' . $_SESSION['attogram_username']);
     header('Location: ' . $this->path . '/');
     exit;
@@ -17,7 +17,7 @@ if( isset($_POST['login']) ) { // attempt to login, buffer errors to show later
   $message = '<p class="alert alert-warning">Login failed</p>';
 }
 
-$this->page_header('Login');
+$this->pageHeader('Login');
 ?>
 <div class="container">
  <div class="col-xs-6 col-xs-offset-2">
@@ -38,4 +38,4 @@ $this->page_header('Login');
  </div>
 </div>
 <?php
-$this->page_footer();
+$this->pageFooter();
