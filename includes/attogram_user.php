@@ -1,11 +1,11 @@
-<?php // Attogram Framework - User Module - attogram_user class v0.1.4
+<?php // Attogram Framework - User Module - AttogramUser class v0.1.5
 
 namespace Attogram;
 
 /**
  * Attogram User Object Interface
  */
-interface attogram_user_interface {
+interface AttogramUserInterface {
 
   public static function login( $psr3LoggerObject, $databaseObject );
 
@@ -19,7 +19,7 @@ interface attogram_user_interface {
  * A very simple user system, with very minimal security.
  * Not recommended for production environment
  */
-class attogram_user implements attogram_user_interface
+class AttogramUser implements AttogramUserInterface
 {
 
   /**
@@ -52,7 +52,7 @@ class attogram_user implements attogram_user_interface
     }
     $user = $user[0];
     $_SESSION['attogram_id'] = $user['id'];
-    $_SESSION['attogram_username'] = $user['username'];
+    $_SESSION['AttogramUsername'] = $user['username'];
     $_SESSION['attogram_level'] = $user['level'];
     $_SESSION['attogram_email'] = $user['email'];
     $log->debug('LOGIN: User Logged in');
@@ -75,10 +75,10 @@ class attogram_user implements attogram_user_interface
    */
   public static function is_logged_in( )
   {
-    if( isset($_SESSION['attogram_id']) && $_SESSION['attogram_id'] && isset($_SESSION['attogram_username']) && $_SESSION['attogram_username']) {
+    if( isset($_SESSION['attogram_id']) && $_SESSION['attogram_id'] && isset($_SESSION['AttogramUsername']) && $_SESSION['AttogramUsername']) {
       return true;
     }
     return false;
   }
 
-} // end class attogram_user
+} // end class AttogramUser
