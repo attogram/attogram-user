@@ -1,6 +1,6 @@
-<?php // Attogram Framework - User Module - User Admin v0.2.4
+<?php // Attogram Framework - User Module - User Admin v0.2.5
 
-namespace Attogram;
+namespace attogram;
 
 $this->page_header('👥 User Admin');
 

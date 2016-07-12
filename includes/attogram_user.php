@@ -1,6 +1,6 @@
-<?php // Attogram Framework - User Module - attogram_user class v0.1.3
+<?php // Attogram Framework - User Module - attogram_user class v0.1.4
 
-namespace Attogram;
+namespace attogram;
 
 /**
  * Attogram User Object Interface
