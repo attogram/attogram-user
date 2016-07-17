@@ -1,7 +1,5 @@
 <?php
-// Attogram Framework - User Module - Base Test v0.0.3
-
-namespace Attogram;
+// Attogram Framework - User Module - Base Test v0.0.4
 
 use PHPUnit\Framework\TestCase;
 
