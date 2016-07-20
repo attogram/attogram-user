@@ -1,12 +1,13 @@
 <?php
-// Attogram Framework - User Module - AttogramUser class v0.1.7
+// Attogram Framework - User Module - AttogramUser class v0.1.8
 
 namespace Attogram;
 
 /**
  * Attogram User Object Interface
  */
-interface AttogramUserInterface {
+interface AttogramUserInterface
+{
 
     public static function login($psr3LoggerObject, $databaseObject);
 
@@ -24,11 +25,11 @@ class AttogramUser implements AttogramUserInterface
 
     /**
      * login a user into the system
-     * @param  obj   $log       PSR-3 compliant logger object
-     * @param  obj   $database  The attogram database object
+     * @param  obj   $log       PSR-3 compliant logger, interface: \Psr\Log\LoggerInterface
+     * @param  obj   $database  The attogram database, interface: \Attogram\AttogramDatabaseInterface
      * @return bool
      */
-    public static function login($log, $database)
+    public static function login(\Psr\Log\LoggerInterface $log, \Attogram\AttogramDatabaseInterface $database)
     {
         if (!isset($_POST['u']) || !isset($_POST['p']) || !$_POST['u'] || !$_POST['p']) {
             $log->error('LOGIN: missing username or password');
