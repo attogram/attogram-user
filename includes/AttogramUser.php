@@ -1,5 +1,5 @@
 <?php
-// Attogram Framework - User Module - AttogramUser class v0.1.8
+// Attogram Framework - User Module - AttogramUser class v0.2.0
 
 namespace Attogram;
 
@@ -9,7 +9,7 @@ namespace Attogram;
 interface AttogramUserInterface
 {
 
-    public static function login($psr3LoggerObject, $databaseObject);
+    public static function login(\Psr\Log\LoggerInterface $log, \Attogram\AttogramDatabaseInterface $database);
 
     public static function logout();
 
@@ -25,8 +25,8 @@ class AttogramUser implements AttogramUserInterface
 
     /**
      * login a user into the system
-     * @param  obj   $log       PSR-3 compliant logger, interface: \Psr\Log\LoggerInterface
-     * @param  obj   $database  The attogram database, interface: \Attogram\AttogramDatabaseInterface
+     * @param \Psr\Log\LoggerInterface $log  PSR-3 compliant logger
+     * @param \Attogram\AttogramDatabaseInterface $database  The Attogram Database
      * @return bool
      */
     public static function login(\Psr\Log\LoggerInterface $log, \Attogram\AttogramDatabaseInterface $database)
