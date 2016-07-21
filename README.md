@@ -13,23 +13,29 @@
 This is the User Module for the [Attogram Framework](https://github.com/attogram/attogram).
 
 # Installing the User Module
+
 * You already installed the [Attogram Framework](https://github.com/attogram/attogram), didn't you?
 * Goto the top level of your install, then run:
+
 ```
 composer create-project attogram/attogram-user modules/_attogram_user
 ```
 
 # User Module contents
 
-* Public Actions:
- * `actions/login.php` - Login page
- * `actions/user.php` - User home page
+## Public Actions
 
-* Admin Actions:
- * `admin_actions/user-admin.php` - User administration
+* `actions/login.php` - Login page
+* `actions/user.php` - User home page
 
-* Includes:
- * `includes/AttogramUser.php` - Attogram User object
+## Admin Actions
 
- * Misc:
-  * `tests/*` - phpunit tests
+* `admin_actions/user-admin.php` - User administration
+
+## Includes
+
+* `includes/AttogramUser.php` - Attogram User object
+
+## Misc
+
+* `tests/*` - phpunit tests
