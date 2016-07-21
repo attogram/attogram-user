@@ -1,5 +1,5 @@
 <?php
-// Attogram Framework - User Module - Login Page v0.0.11
+// Attogram Framework - User Module - Login Page v0.0.12
 
 namespace Attogram;
 
@@ -11,8 +11,10 @@ if (!class_exists('\Attogram\AttogramUser')) {
 $message = '';
 if (isset($_POST['login'])) { // attempt to login, buffer errors to show later
     if (\Attogram\AttogramUser::login($this->log, $this->database)) {
-        $this->event->info ($this->clientIp . ' LOGIN: id: ' . $_SESSION['attogram_id']
-            . ' username: ' . $_SESSION['AttogramUsername']);
+        $this->event->info(
+            $this->clientIp . ' LOGIN: id: ' . $_SESSION['attogram_id']
+            . ' username: ' . $_SESSION['AttogramUsername']
+        );
         header('Location: ' . $this->path . '/');
         $this->shutdown();
     }
@@ -23,7 +25,10 @@ $this->pageHeader('Login');
 ?>
 <div class="container">
  <div class="col-xs-6 col-xs-offset-2">
-  <?php if( $message ) { print $message; } ?>
+<?php
+if ($message) {
+    print $message;
+} ?>
   <form action="." method="POST">
     <div class="form-group">
       <input type="hidden" name="login" value="login">

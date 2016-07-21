@@ -1,6 +1,7 @@
 # CHANGELOG: Attogram User Module
-* Repository: https://github.com/attogram/attogram-user
-* Click version number for a comparison of changes since the previous release
+
+- Repository: <https://github.com/attogram/attogram-user>
+- Click version number for a comparison of changes since the previous release
 
 ## [Unreleased]
 

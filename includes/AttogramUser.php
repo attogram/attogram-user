@@ -1,5 +1,5 @@
 <?php
-// Attogram Framework - User Module - AttogramUser class v0.2.0
+// Attogram Framework - User Module - AttogramUser class v0.2.1
 
 namespace Attogram;
 
@@ -81,8 +81,7 @@ class AttogramUser implements AttogramUserInterface
      */
     public static function isLoggedIn()
     {
-        if (
-            isset($_SESSION['attogram_id'])
+        if (isset($_SESSION['attogram_id'])
             && $_SESSION['attogram_id']
             && isset($_SESSION['AttogramUsername'])
             && $_SESSION['AttogramUsername']
